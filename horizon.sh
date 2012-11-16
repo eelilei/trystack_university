@@ -3,8 +3,8 @@ NOW_DIR=$(pwd)
 . $NOW_DIR/setting
 
 install_horizon () {
-	apt-get install build-essenial git python-dev python setuptools python-pip memcached nodejs
-	pip install django python-memcached
+	apt-get install -y build-essenial git python-dev python setuptools python-pip memcached nodejs
+	pip install -y django python-memcached
         wget https://launchpad.net/horizon/folsom/2012.2/+download/horizon-2012.2.tar.gz -P $DEST/
         cd $DEST
         tar -xzvf $DEST/horizon-2012.2.tar.gz

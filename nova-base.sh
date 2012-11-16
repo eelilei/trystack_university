@@ -84,6 +84,6 @@ install_required_software
 if [ "$KEYSTONE_IP" != "$NOVA_IP" ];then
 	install_keystoneclient
 fi
-#install_nova
-#install_novaclient
+install_nova
+install_novaclient
 config_nova
